@@ -6,30 +6,9 @@ $heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif
 $header-title-font-family: $heading-font-family !default;
 $header-subtitle-font-family: $heading-font-family !default;
 
-// Fonts
-.heading {
-  //font-family: $heading-font-family;
-}
-//.sans { font-family: $sans; }
-//.serif { font-family: $serif; }
-//.mono { font-family: $mono; }
-
-body > header h1 {
-  font-size: 2.2em;
-  @extend .heading;
-  //font-family: $header-title-font-family;
-  font-weight: normal;
-  line-height: 1.2em;
-  margin-bottom: 0.6667em;
-}
-body > header h2 {
-  //font-family: $header-subtitle-font-family;
-}
-
 body {
   line-height: 1.5em;
   color: $text-color;
-  @extend .serif;
 }
 h1 {
   font-size: 2.2em;
@@ -37,14 +16,12 @@ h1 {
 }
 
 @media only screen and (min-width: 992px) {
-  body { font-size: 1.15em; }
   h1 { font-size: 2.6em; line-height: 1.2em; }
 }
 
 #{headings()}{
   @extend .heading;
   text-rendering: optimizelegibility;
-  margin-bottom: 1em;
   font-weight: bold;
 }
 h2, section h1 {

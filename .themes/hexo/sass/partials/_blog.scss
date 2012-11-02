@@ -5,12 +5,17 @@ $box-shadow:1px 2px 3px #ddd;
         margin-right:-300px;
         float:left;
         #blog-archives {
+            > h2 {
+                padding-bottom:10px
+            }
             article {
                 background:white;
                 padding:20px 20px 15px 77px;
             }
         }
-        .page-main {
+        article.page-main {
+            box-shadow:none;
+            -webkit-box-shadow:none;
             header {
                 margin-top:0;
                 h1 {
@@ -19,12 +24,12 @@ $box-shadow:1px 2px 3px #ddd;
                 }
             }
         }
-        article:not(.page-main) {
+        article {
             -webkit-box-shadow:$box-shadow;
             box-shadow:$box-shadow;
             margin-bottom:50px;
             .icon {
-                &::before {
+                &:before {
                     content: '\f016'
                 }
             }
@@ -34,7 +39,7 @@ $box-shadow:1px 2px 3px #ddd;
                 padding:20px 20px 15px 77px;
                 position:relative;
                 img, video {
-                    max-width:100%
+                    max-width:100%;
                     height:auto;
                     border:0;
                 }
@@ -79,7 +84,7 @@ $box-shadow:1px 2px 3px #ddd;
                 }
 
                 footer {
-                    margin-top:15px;
+                    margin:15px 0 35px 0;
                     padding-top:15px;
                     border-top:1px solid #ddd;
                     color:#999;
