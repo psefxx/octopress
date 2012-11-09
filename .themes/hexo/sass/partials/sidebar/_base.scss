@@ -3,6 +3,8 @@ $box-sizing:border-box;
     .sidebar {
         width:270px;
         float:right;
+        font-family: "Lato", Helvetical Neue, Helvetical,Arial,sans-serif;
+
         a {
             &:hover {
                 text-decoration:underline;
@@ -10,10 +12,12 @@ $box-sizing:border-box;
             color:#258fb8;
             text-decoration:none;
         }
+
         .search {
-            margin-bottom:30px;
+            margin-bottom:20px;
             input {
                 background:white;
+                font-family: "Lato", Helvetical Neue, Helvetical,Arial,sans-serif;
                 font-style:italic;
                 font-size:1em;
                 padding:10px 15px;
@@ -46,6 +50,7 @@ $box-sizing:border-box;
                 font-size:0.9em;
             }
         }
+
         #tag-cloud {
             padding:15px 20px;
             display:block;

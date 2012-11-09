@@ -36,12 +36,23 @@ $box-shadow:1px 2px 3px #ddd;
 
             .article-content {
                 background:white;
-                padding:20px 20px 15px 77px;
+                padding:20px 20px 1px 77px;
                 position:relative;
                 img, video {
                     max-width:100%;
                     height:auto;
                     border:0;
+                }
+                h2 {
+                    font-size:14pt;
+                    font-family: "Lato", Helvetical Neue, Helvetical,Arial,sans-serif;
+                    padding-bottom:10px;
+                }
+                h3 {
+                    padding-bottom:5px;
+                }
+                h4 {
+                    padding-bottom:5px;
                 }
                 header {
                     margin:0;
@@ -54,8 +65,9 @@ $box-shadow:1px 2px 3px #ddd;
                         line-height:1;
                     }
                     h1.entry-title {
+                        font-family: "Lato", Helvetical Neue, Helvetical,Arial,sans-serif, Heiti;
                         font-weight:fold;
-                        padding-bottom:40px;
+                        padding-bottom:15px;
                         margin:0;
                         a {
                             color:#444;
@@ -84,8 +96,9 @@ $box-shadow:1px 2px 3px #ddd;
                 }
 
                 footer {
-                    margin:15px 0 35px 0;
+                    margin:15px 0 15px 0;
                     padding-top:15px;
+                    padding-bottom:5px;
                     border-top:1px solid #ddd;
                     color:#999;
                     font-size:0.9em;
@@ -118,7 +131,6 @@ $box-shadow:1px 2px 3px #ddd;
                     }
                 }
             }
-
         }
         .blog-main, .blog-index, .page-main {
             margin-right:300px;
