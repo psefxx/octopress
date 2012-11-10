@@ -1,26 +1,69 @@
 $box-shadow:1px 2px 3px #ddd;
 #main {
+    .icon {
+        width:32px;
+        height:32px;
+        margin-right:25px;
+        position:absolute;
+        top:20px;
+        left:20px;
+        color:#258fb8;
+        &::before {
+            position:absolute;
+            font:32px FontAwesome;
+            top:0;
+            left:0;
+            width:32px;
+            text-align:center;
+        }
+    }
     .main-col {
         width:100%;
         margin-right:-300px;
         float:left;
         #blog-archives {
+            -webkit-box-shadow:$box-shadow;
+            box-shadow:$box-shadow;
             > h2 {
                 padding-bottom:10px
             }
             article {
                 background:white;
                 padding:20px 20px 15px 77px;
+                position:relative;
+                margin-bottom:0px;
+                h1 {
+                    a {
+                        &:hover {color:#258FB8;}
+                        color:#444;
+                        font-weight:normal;
+                    }
+                }
             }
+            time {color:#258FB8;}
         }
         article.page-main {
             box-shadow:none;
             -webkit-box-shadow:none;
             header {
                 margin-top:0;
-                h1 {
+                margin-bottom:30px;
+                h1.entry-title {
                     color:#999;
                     font-size:1.4em;
+                    &:before {
+                        font-family: FontAwesome;
+                        padding-right:15px;
+                    }
+                    &.category-lst:before {
+                        content:'\f07b';
+                    }
+                    &.tag-lst:before {
+                        content:'\f02b';
+                    }
+                    &.archive-lst:before {
+                        content:'\f073';
+                    }
                 }
             }
         }
@@ -54,16 +97,16 @@ $box-shadow:1px 2px 3px #ddd;
                 h4 {
                     padding-bottom:5px;
                 }
+                time {
+                    color:#999;
+                    font: 0.9em "Lato", "Helvetical Neue", Helvetical, Arial,sans-serif;
+                    display:block;
+                    margin-bottom:5px;
+                    line-height:1;
+                }
                 header {
                     margin:0;
                     p.meta {margin:0}
-                    time {
-                        color:#999;
-                        font: 0.9em "Lato", "Helvetical Neue", Helvetical, Arial,sans-serif;
-                        display:block;
-                        margin-bottom:5px;
-                        line-height:1;
-                    }
                     h1.entry-title {
                         font-family: "Lato", Helvetical Neue, Helvetical,Arial,sans-serif, Heiti;
                         font-weight:fold;
@@ -74,23 +117,6 @@ $box-shadow:1px 2px 3px #ddd;
                             &:hover {
                                 color: #258fb8;
                             }
-                        }
-                    }
-                    .icon {
-                        width:32px;
-                        height:32px;
-                        margin-right:25px;
-                        position:absolute;
-                        top:20px;
-                        left:20px;
-                        color:#258fb8;
-                        &::before {
-                            position:absolute;
-                            font:32px FontAwesome;
-                            top:0;
-                            left:0;
-                            width:32px;
-                            text-align:center;
                         }
                     }
                 }
